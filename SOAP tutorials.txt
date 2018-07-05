@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Regression1" >
+  <parameter name="xmlDocumentName" value="sample.xml"></parameter>
+  <parameter name="studentCount" value="/class/student"></parameter>
+  <parameter name="studentFirstName" value="/class/student/*[1]"></parameter>
+      <parameter name="lastStudentInList" value="/class/student[last()]"></parameter>
+   <parameter name="childElementNodesOfStudent" value="/class/student"></parameter>
+   
+   <parameter name="selectFirstStudentLastname" value="/class/student/*[2]"></parameter>
+    <classes>
+      <class name="com.realpage.chargeback.ChargeBackScenarioTestOne"/>     
+    </classes>
+  </test>
+  
+  
+</suite> <!-- Suite -->
+
+
+
+ 
+
+ 
+ ****************************** Free SOAP services on internet and explanation of WSDL on w3schools *****************************
+ 
+ 
+ http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx
+ http://ws.cdyne.com/emailverify/Emailvernotestemail.asmx?wsdl
+ 
+ https://www.w3schools.com/XML/xml_wsdl.asp
+ 
+ 
+ **************************** To know the difference between various elements or tags in wsdl file ******************************
+
+ 
+ C:\Users\mkoduri\Documents\JSON vs SOAP\Emailvernotestemail.wsdl.xml
+ 
+ https://www.w3schools.com/XML/xml_wsdl.asp
+ https://www.w3schools.com/XML/xml_soap.asp
+ 
+ *************************************************************************
+
+ 
+ What does SOAP action do?
+ 
+ https://archive.sap.com/discussions/thread/722614
+ 
+ it is like a function that web service can perform.
+
+you find the SOAP action from WSDL file at tag soap:operation:
+
+If more than one message type is described in the WSDL, several SOAP actions might also be defined. Check for the correct operation name.
+ If no SOAP action is defined in the WSDL, you can leave the parameter in the receiver channel empty.
+ 
+**************************************************************************
+  
